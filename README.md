@@ -5,7 +5,7 @@ Mon portfolio d'administrateur systèmes, réseaux et sécurité.
 
 Je suis un administrateur systèmes, réseaux et sécurité. Sur ce portfolio, je partage des projets techniques sur lesquels j'ai travaillé, couvrant l'administration réseau, la sécurité informatique, et la gestion d'infrastructures IT.
 
-Vous trouverez ici des exemples de scripts, des démonstrations de configurations, et d'autres contributions liées à la gestion des systèmes et réseaux.
+Vous trouverez ici des exemples des projets, des scripts, des démonstrations de configurations, et d'autres contributions liées à la gestion des systèmes et réseaux.
 
 # Les projets réalisés :
 
