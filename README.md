@@ -1,4 +1,4 @@
-# projets-techniques
+# Projets-techniques
 Mon portfolio d'administrateur systèmes, réseaux et sécurité.
 
 # Bienvenue sur mon Portfolio
