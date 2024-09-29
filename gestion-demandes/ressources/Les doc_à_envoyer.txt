@@ -1,0 +1,4 @@
+l'export de la base de données glpi
+les documents tickets_traités
+la présentation agent glpi
+Les logigrammes
