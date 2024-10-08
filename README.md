@@ -1,11 +1,11 @@
-# Projets-techniques (En cours d'élaboration)
+# Projets-techniques 
 Mon portfolio d'administrateur systèmes, réseaux et sécurité.
 
-# Bienvenue sur mon Portfolio
+# Bienvenue sur mon Portfolio (En cours d'élaboration)
 
-Je suis un administrateur systèmes, réseaux et sécurité. Sur ce portfolio, je partage des projets techniques sur lesquels j'ai travaillé, couvrant l'administration réseau, la sécurité informatique, et la gestion d'infrastructures IT.
+Je suis un administrateur systèmes, réseaux et sécurité. 
 
-Vous trouverez ici des exemples des projets, des scripts, des démonstrations de configurations, et d'autres contributions liées à la gestion des systèmes et réseaux.
+Ce portfolio contient des projets techniques sur lesquels j'ai travaillé, notamment en administration réseau, sécurité informatique et gestion d'infrastructures IT.
 
 # Les projets réalisés :
 
