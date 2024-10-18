@@ -1,0 +1,7 @@
+CREATE DATABASE p4database;
+
+CREATE USER 'p4user'@'localhost' IDENTIFIED BY 'toor123.';
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON p4database.* TO 'p4user'@'localhost';
+
+FLUSH PRIVILEGES;

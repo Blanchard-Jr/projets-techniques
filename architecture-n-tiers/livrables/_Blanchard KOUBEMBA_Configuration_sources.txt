@@ -1,0 +1,16 @@
+################################################
+#  Le fichier de connexion à la base de données (vars)
+#
+# /etc/apache2/sites-available/www.beesafe.co.conf/vars.php
+#
+################################################
+
+<?php
+$servername = "192.168.100.102";
+$username = "p4user";
+$password = "toor123.";
+$db = "p4database";
+$port = 3306;
+?>
+
+

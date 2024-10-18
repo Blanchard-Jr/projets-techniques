@@ -1,0 +1,112 @@
+################################################
+#          1 - Les options
+#
+#   /etc/bind/named.conf.options
+#
+################################################
+
+options {
+        directory "/var/cache/bind";
+
+        // If there is a firewall between you and nameservers you want
+        // to talk to, you may need to fix the firewall to allow multiple
+        // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+        // If your ISP provided one or more IP addresses for stable
+        // nameservers, you probably want to use them as forwarders.
+        // Uncomment the following block, and insert the addresses replacing
+        // the all-0's placeholder.
+
+        forwarders {
+                8.8.8.8;
+                8.8.4.4;
+         };
+
+        //========================================================================
+        // If BIND logs error messages about the root key being expired,
+        // you will need to update your keys.  See https://www.isc.org/bind-keys
+        //========================================================================
+        dnssec-validation auto;
+
+        listen-on-v6 { any; };
+        allow-recursion { any; };
+};
+
+
+################################################
+#          2 -Le local
+#
+#   /etc/bind/named.conf.local
+#
+################################################
+
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "beesafe.co" {
+    type master;
+    file "/etc/bind/zones/beesafe.co.zone";
+    forwarders{};
+};
+
+zone "100.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/100.168.192.in-addr.arpa.zone";
+    forwarders{};
+};
+
+
+################################################
+#          3 -La zone directe
+#
+# /etc/bind/zones/beesafe.co.zone
+#
+################################################
+
+;
+; BIND data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     beesafe.co. root.beesafe. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@               IN      NS      ns.beesafe.co.
+@               IN      A       192.168.100.103
+ns              IN      A       192.168.100.103
+beesafe.co      IN      A       192.168.100.101
+www             IN      A       192.168.100.101
+#www            IN      CNAME   ns
+
+
+################################################
+#          4 -La zone inversée
+#
+# /etc/bind/zones/100.168.192.in-addr.arpa.zone
+#
+################################################
+
+
+
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     ns.beesafe.co. root.beesafe.co. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.beesafe.co.
+3       IN      PTR     ns.beesafe.co.
+1       IN      PTR     www.beesafe.co.
