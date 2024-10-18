@@ -42,7 +42,3 @@ Ce dossier contient les fichiers pour la présentation du projet :
 ## Conclusion
 La mise en place du réseau local a permis de fournir à la startup une infrastructure robuste, évolutive et sécurisée, facilitant ainsi sa croissance et son développement.
 
----
-
-Vous pouvez maintenant ajouter les fichiers spécifiques dans chaque dossier selon leur type (livrables, ressources, présentation). Une fois cette étape réalisée, faites-moi signe, et nous continuerons à enrichir ce projet avec des éléments supplémentaires si nécessaire.
-
