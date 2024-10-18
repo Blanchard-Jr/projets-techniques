@@ -29,7 +29,7 @@ Les compétences développées au cours de ce projet sont cruciales pour :
 
 ## Organisation du Projet
 
-### Livrables
+### [Livrables](./livrables)
 Ce dossier contient les différents livrables du projet, tels que :
 - La documentation
 - La nouvelle cartographie du SI
