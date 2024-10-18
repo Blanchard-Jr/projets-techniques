@@ -1,0 +1,17 @@
+
+################ Planification pour STRATÉGIE 1
+
+# Sauvegarde complète - chaque dimanche à 2h du matin
+0 2 * * 0 /home/user-stockage/scripts/backup.sh
+
+# Sauvegarde incrémentale - tous les jours sauf le dimanche à 2h du matin
+0 2 * * 1-6 /home/user-stockage/scripts/backup.sh
+
+
+################ Planification pour STRATÉGIE 2
+
+# Sauvegarde complète initiale - à exécuter manuellement ou lors de la première exécution
+# /home/user-stockage/scripts/vm_backup_full.sh
+
+# Sauvegarde différentielle - chaque jour à 3h du matin
+0 3 * * * /home/user-stockage/scripts/backup_srv_glpi
