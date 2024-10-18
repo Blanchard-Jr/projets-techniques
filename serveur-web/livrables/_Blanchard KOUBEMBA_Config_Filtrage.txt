@@ -1,0 +1,47 @@
+###########################################
+#					                           #
+#     Configuration Filtrage              # 
+#				                              #
+###########################################
+
+
+192.168.10.100 c'est l'IP de l'interface interne pour le vhost : admin.rainbowbank.com
+
+
+root@srv01:~# iptables -L -n -v
+Chain INPUT (policy ACCEPT 5246 packets, 889K bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+   18  2648 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+    0     0 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:80
+    0     0 ACCEPT     udp  --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:443
+    0     0 ACCEPT     icmp --  *      *       192.168.10.100       0.0.0.0/0            icmptype 8
+    0     0 ACCEPT     icmp --  enp0s8 *       192.168.10.100       0.0.0.0/0            icmptype 8
+    0     0 ACCEPT     tcp  --  enp0s8 *       192.168.10.100       0.0.0.0/0            tcp dpt:21
+    0     0 ACCEPT     tcp  --  *      *       192.168.10.100       0.0.0.0/0            tcp dpt:21
+    0     0 ACCEPT     tcp  --  *      *       192.168.10.100       0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  enp0s8 *       192.168.10.100       0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  enp0s8 *       192.168.10.100       0.0.0.0/0            multiport dports 5501,5502
+    0     0 ACCEPT     tcp  --  *      *       192.168.10.100       0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      *       192.168.10.100       0.0.0.0/0            multiport dports 5501,5502
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:990
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 ACCEPT     icmp --  *      enp0s3  192.168.10.0/24      0.0.0.0/0            icmptype 8
+    0     0 ACCEPT     icmp --  *      enp0s3  192.168.10.0/24      0.0.0.0/0            icmptype 8
+    0     0 ACCEPT     icmp --  enp0s3 *       0.0.0.0/0            192.168.10.0/24      icmptype 0
+
+Chain OUTPUT (policy ACCEPT 4708 packets, 566K bytes)
+ pkts bytes target     prot opt in     out     source               destination
+    0     0 ACCEPT     icmp --  *      *       0.0.0.0/0            192.168.10.100       icmptype 0
+    0     0 ACCEPT     icmp --  *      enp0s8  0.0.0.0/0            192.168.10.100       icmptype 0
+    0     0 ACCEPT     tcp  --  *      enp0s8  0.0.0.0/0            192.168.10.100       tcp dpt:21
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            192.168.10.100       tcp dpt:21
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            192.168.10.100       tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      enp0s8  0.0.0.0/0            192.168.10.100       tcp dpt:22
+    0     0 ACCEPT     tcp  --  *      enp0s8  0.0.0.0/0            192.168.10.100       multiport dports 5501,5502
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            192.168.10.100       multiport sports 5501,5502
+    0     0 ACCEPT     tcp  --  *      enp0s8  0.0.0.0/0            192.168.10.100       multiport sports 5501,5502
+  251 16892 ACCEPT     tcp  --  *      enp0s3  0.0.0.0/0            0.0.0.0/0            multiport dports 80,443
+    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp spt:990

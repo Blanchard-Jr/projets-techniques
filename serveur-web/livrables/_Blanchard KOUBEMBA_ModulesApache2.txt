@@ -1,0 +1,50 @@
+###########################################
+#				                    	  #
+#     Le module mod_evasive               # 
+#				                          #
+###########################################
+
+<IfModule mod_evasive20.c>
+    # La table de Hachage
+    DOSHashTableSize    3097
+
+    # Combien de requ�tes pour la m�me page par intervalle de temps
+    DOSPageCount        25
+
+    # Combien de requ�tes pour le m�me site par intervalle de temps
+    DOSSiteCount        50
+
+    # Intervalle de temps (en secondes)
+    DOSPageInterval     1
+    DOSSiteInterval     1
+
+    # Combien de temps (en secondes) bannir l'adresse IP
+    DOSBlockingPeriod   60
+</IfModule>
+
+###########################################
+#				                    	  #
+#     Le module reqtimeout                # 
+#				                          #
+###########################################
+
+<IfModule reqtimeout_module>
+    RequestReadTimeout header=20-40,minrate=500
+    RequestReadTimeout body=10,minrate=500
+</IfModule>
+
+
+###########################################
+#				                    	  #
+#     Le module ModSecurity               # 
+#				                          #
+###########################################
+
+ <IfModule security2_module> 
+
+     SecDataDir /var/cache/modsecurity 
+     IncludeOptional /etc/modsecurity/*.conf 
+     IncludeOptional "/usr/share/modsecurity-crs/*.conf 
+     IncludeOptional "/usr/share/modsecurity-crs/rules/*.conf 
+     
+ </IfModule>

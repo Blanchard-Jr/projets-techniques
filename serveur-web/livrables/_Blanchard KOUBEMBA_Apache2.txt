@@ -1,0 +1,47 @@
+###########################################
+#				                    	  #
+# Les deux sites: extranet et admin       # 
+#				                          #
+###########################################
+
+root@srv01:/var/www# tree
+.
++-- admin.rainbowbank.com
+��� +-- css
+��� ��� +-- style.css
+��� +-- images
+��� ��� +-- logo.png
+��� +-- index.html
+��� +-- js
+��� ��� +-- script.js
+��� +-- pdf
++-- extranet.rainbowbank.com
+��� +-- css
+��� ��� +-- style.css
+��� +-- images
+��� ��� +-- logo.png
+��� +-- index.html
+��� +-- js
+��� ��� +-- script.js
+��� +-- pdf
++-- html
+    +-- index.html
+
+11 directories, 9 files
+
+sudo chown -R www-data:www-data /var/www/extranet.rainbowbank.com
+sudo chown -R www-data:www-data /var/www/admin.rainbowbank.com
+sudo systemctl restart apache2
+
+###########################################
+#				                    	  #
+#        Les deux sites activ�s	         # 
+#			                	          #
+###########################################
+
+root@srv01:/etc/apache2/sites-enabled# tree
+.
++-- admin.rainbowbank.com.conf -> ../sites-available/admin.rainbowbank.com.conf
++-- extranet.rainbowbank.com.conf -> ../sites-available/extranet.rainbowbank.com.conf
+
+0 directories, 2 files

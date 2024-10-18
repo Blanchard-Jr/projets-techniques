@@ -1,0 +1,30 @@
+###########################################
+#					                      #
+#   Certificat & cl� pour les vhosts     # 
+#				                          #
+###########################################
+
+sudo apt install openssl
+
+sudo mkdir /etc/apache2/ssl/rainbowbank
+
+cd /etc/apache2/ssl/rainbowbank
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout rainbowbank.key -out rainbowbank.crt -subj "/C=FR/ST=ILE DE FRANCE/L=PARIS/O=RAINBOW BANK/OU=DIRECTION INFRASTRUCTURE ET LOGISTIQUE/CN=*.rainbowbank.com/emailAddress=admin@rainbowbank.com"
+
+
+###########################################
+#				                    	  #
+#   Certificat & cl� pour le FTPS        # 
+#				                          #
+###########################################
+
+cd /etc/vsftpd
+
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out vsftp-certificate.crt -keyout vsftp.key
+
+Information pour le certificat :
+
+C=FR/ST=ILE DE FRANCE/L=PARIS/O=RAINBOWBANK/OU=DIRECTION INFRASTRUCTURE ET LOGISTIQUE/CN=admin@rainbowbank.com
+
+IP du serveur = 192.168.10.100

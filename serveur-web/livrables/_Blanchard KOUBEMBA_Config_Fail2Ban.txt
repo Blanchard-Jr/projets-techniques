@@ -1,0 +1,14 @@
+###########################################
+#					                      #
+#     Configuration fail2ban              # 
+#				                          #
+###########################################
+
+[vsftpd]
+enabled  = true
+port     = ftp,ftp-data,ftps,ftps-data
+filter   = vsftpd
+logpath  = /var/log/vsftpd.log
+maxretry = 3
+findtime = 600
+bantime = 3600

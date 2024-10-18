@@ -1,0 +1,30 @@
+###########################################
+#					                      #
+#     Configuration FTPS                  # 
+#				                          #
+###########################################
+
+listen=NO
+listen_ipv6=YES
+anonymous_enable=NO
+local_enable=YES
+dirmessage_enable=YES
+use_localtime=YES
+xferlog_enable=YES
+connect_from_port_20=YES
+secure_chroot_dir=/var/run/vsftpd/empty
+pam_service_name=vsftpd
+rsa_cert_file=/etc/vsftpd/vsftp-certificate.crt
+rsa_private_key_file=/etc/vsftpd/vsftp.key
+ssl_enable=YES
+chroot_local_user=YES
+allow_writeable_chroot=YES
+chroot_list_enable=YES
+chroot_list_file=/etc/vsftpd-chroot.list
+
+
+local_root=/var/www/
+allow_writeable_chroot=YES
+user_sub_token=$USER
+local_umask=002
+virtual_use_local_privs=YES
