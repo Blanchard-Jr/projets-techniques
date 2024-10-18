@@ -1,1 +1,2 @@
-
+Qu'allez-vous apprendre dans ce projet ?
+Votre mission consistera à configurer un serveur prototype qui hébergera les sites du projet EXTRANET en utilisant des technologies de pointe telles que NGINX pour les services web et FTPS pour le transfert de fichiers sécurisé. Vous devrez également configurer les éléments de sécurité, notamment netfilter et Fail2Ban, pour assurer la protection des services web. Ce travail impliquera la création et la configuration de plusieurs environnements virtuels pour simuler les différentes infrastructures réseau et tester l'interaction entre les services. Vous allez également générer un certificat SSL auto-signé pour sécuriser les communications.
