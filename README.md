@@ -26,9 +26,8 @@ Ce portfolio contient des projets techniques sur lesquels j'ai travaillé, notam
 | 💾 **9 - Sauvegarde**                                | Mettez en place une nouvelle solution de sauvegarde.                                                   |
 | 🛡️ **10 - Sécurité réseau**                         | Sécurisez le réseau d'une grande entreprise.                                                           |
 | 🔍 **11 - Audit Sécurité AD**                        | Évaluez et améliorez le niveau de sécurité d'un domaine Windows et de l'Active Directory associé.      |
-| ☁️ **12 - Migration Cloud**                         | Gérez une migration vers le cloud. 
-|
-| 🖥️ **13 - Intégration Windows Server 2022 avec Hyper-V**  | Ajoutez un serveur Windows Server 2022 avec Hyper-V à une infrastructure existante, incluant la configuration des VLANs et des commutateurs virtuels.
+| ☁️ **12 - Migration Cloud**                         | Gérez une migration vers le cloud.                                                                     |
+| 🖥️ **13 - Intégration Windows Server 2022 avec Hyper-V**  | Ajoutez un serveur Windows Server 2022 avec Hyper-V à une infrastructure existante. Ce projet inclut :<br>- La création d'un Switch Embedded Teaming (SET)<br>- La configuration d'un commutateur virtuel externe<br>- L'ajout et la gestion des VLANs<br>- L'adaptation de la configuration du switch Aruba pour assurer la connectivité réseau. |
 
 ---
 
@@ -41,3 +40,20 @@ Des exemples de scripts automatisés que j'ai développés :
 
 ---
 
+## 📁 Structure du Projet  
+L'arborescence du portfolio inclura un nouveau dossier pour ce projet :  
+```bash
+projets-techniques/
+├── gestion-des-demandes/
+├── reseau-startup/
+├── architecture-pme/
+├── securite-web/
+├── raccordement-si/
+├── services-reseaux/
+├── supervision-si/
+├── gestion-de-parc/
+├── sauvegarde/
+├── securite-reseau/
+├── audit-securite-ad/
+├── migration-cloud/
+└── integration-windows-server2022/
