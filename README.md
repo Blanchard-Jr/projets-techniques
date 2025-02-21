@@ -26,7 +26,9 @@ Ce portfolio contient des projets techniques sur lesquels j'ai travaillé, notam
 | 💾 **9 - Sauvegarde**                                | Mettez en place une nouvelle solution de sauvegarde.                                                   |
 | 🛡️ **10 - Sécurité réseau**                         | Sécurisez le réseau d'une grande entreprise.                                                           |
 | 🔍 **11 - Audit Sécurité AD**                        | Évaluez et améliorez le niveau de sécurité d'un domaine Windows et de l'Active Directory associé.      |
-| ☁️ **12 - Migration Cloud**                         | Gérez une migration vers le cloud.                                                                     |
+| ☁️ **12 - Migration Cloud**                         | Gérez une migration vers le cloud. 
+|
+| 🖥️ **13 - Intégration Windows Server 2022 avec Hyper-V**  | Ajoutez un serveur Windows Server 2022 avec Hyper-V à une infrastructure existante, incluant la configuration des VLANs et des commutateurs virtuels.
 
 ---
 
