@@ -71,7 +71,7 @@ Formation sysadmin ──► CCNA 200-301 ──► Fortinet FCP Network Securit
 | Plateforme | Lien |
 |------------|------|
 | 💼 LinkedIn | [blanchard-koubemba](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/) |
-| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://blanchard-koubemba.netlify.app) |
+| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://velvety-lolly-6d76ef.netlify.app/) |
 | 🔬 Labs récents | [labs-reseau-securite](https://github.com/Blanchard-Jr/labs-reseau-securite) |
 
 ---
