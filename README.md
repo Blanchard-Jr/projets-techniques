@@ -3,10 +3,10 @@
 > Ce dépôt regroupe les projets réalisés durant ma formation en administration systèmes, réseaux et sécurité.  
 > Ils reflètent ma progression jusqu'à l'obtention du **CCNA 200-301** et constituent la base sur laquelle je continue à évoluer.
 >
-> 👉 Pour mes labs techniques récents (post-CCNA, Fortinet NSE4) : [labs-reseau-securite](https://github.com/Blanchard-Jr/labs-reseau-securite)
+> 👉 Pour mes labs techniques récents (post-CCNA, Fortinet FCP) : [labs-reseau-securite](https://github.com/Blanchard-Jr/labs-reseau-securite)
 
 [![CCNA](https://img.shields.io/badge/Cisco-CCNA_200--301-blue?logo=cisco)](https://cp.certmetrics.com/cisco/en/public/verify/credential/328896ebc1b041579c057d945b48aff6)
-[![Profil](https://img.shields.io/badge/Profil-Administrateur_Systèmes_&_Réseaux-grey)](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/)
+[![Profil](https://img.shields.io/badge/Profil-Administrateur_Réseaux_&_Sécurité-grey)](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/)
 
 ---
 
@@ -59,7 +59,7 @@ Ces projets représentent la **phase 1** de mon parcours technique.
 Ma montée en compétence se poursuit sur les sujets réseaux et sécurité avancés :
 
 ```
-Formation sysadmin ──► CCNA 200-301 ──► Fortinet NSE4 (en cours)
+Formation sysadmin ──► CCNA 200-301 ──► Fortinet FCP Network Security (en cours)
         ▲
    Ce repo
 ```
@@ -71,7 +71,7 @@ Formation sysadmin ──► CCNA 200-301 ──► Fortinet NSE4 (en cours)
 | Plateforme | Lien |
 |------------|------|
 | 💼 LinkedIn | [blanchard-koubemba](https://www.linkedin.com/in/blanchard-koubemba-a9524ab5/) |
-| 🌐 Portfolio | [velvety-lolly-6d76ef.netlify.app](https://velvety-lolly-6d76ef.netlify.app/) |
+| 🌐 Portfolio | [blanchard-koubemba.netlify.app](https://blanchard-koubemba.netlify.app) |
 | 🔬 Labs récents | [labs-reseau-securite](https://github.com/Blanchard-Jr/labs-reseau-securite) |
 
 ---
@@ -79,5 +79,4 @@ Formation sysadmin ──► CCNA 200-301 ──► Fortinet NSE4 (en cours)
 ## 👤 Auteur
 
 **Blanchard Koubemba**  
-Administrateur systèmes & réseaux — orienté ingénierie réseaux & sécurité.  
-🏅 CCNA 200-301 | En cours : Fortinet NSE4
+Administrateur Réseaux & Sécurité — CCNA 200-301 | En cours : Fortinet FCP Network Security
